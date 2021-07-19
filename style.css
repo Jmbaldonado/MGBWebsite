@@ -1,0 +1,141 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    max-height: 100vh;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+}
+
+.company-image {
+    filter: grayscale(100%);
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+.company-image:hover {
+    filter: grayscale(0%);
+}
+
+.card-dark.card-outline {
+    border-top: 3px solid #212529!important;
+}
+
+.card-info.card-outline {
+    border-top: 3px solid #0A81AB!important;
+}
+
+.card-header {
+    position: relative;
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 0.75rem 1.25rem;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c757d;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.col-md-2 {
+    width: 14%;
+    margin-right: 2.66%;
+}
+
+.col-md-10 {
+    width: 80%;
+    margin-left: 10px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+
+.contact-title {
+    font-size: 1.5rem;
+}
+
+.contact-desc {
+    font-size: 1rem;
+}
+
+.fill {
+    height: 360px;
+}
+
+.scroll {
+    display: none;
+    position: fixed;
+    right:10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.scroll:active {
+    background-color: #212529;
+}
+
+.btnFade-in {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: FadeIn;
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.btnFade-out {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: FadeOut;
+}
+
+@keyframes FadeOut {
+    from {
+        opacity: 1;
+    }
+    
+    to {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
