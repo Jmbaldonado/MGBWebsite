@@ -87,6 +87,9 @@ body {
     height: 360px;
 }
 
+.icons {
+    font-size: 14px;
+}
 .scroll {
     display: none;
     position: fixed;
